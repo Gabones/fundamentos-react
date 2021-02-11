@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 
+import ListaAluno from './components/repeat/ListaAlunos'
 import FamiliaAdvanced from './components/basicos/FamiliaAdvanced'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
 import Familia from './components/basicos/Familia'
@@ -39,6 +40,9 @@ export default _ =>
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+            <Card titulo="#06 - Componentes com Filhos" color={getRandomColor()}>
+                <ListaAluno></ListaAluno>
+            </Card>
             <Card titulo="#05.5 - Componentes com Filhos" color={getRandomColor()}>
                 <FamiliaAdvanced sobrenome="Silva">
                     <FamiliaMembro nome="Pedro" />
