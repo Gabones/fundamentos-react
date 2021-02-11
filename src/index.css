@@ -1,4 +1,14 @@
 body{
+    font-family: 'Oswald';
     background-color: #2f2f2f;
     color: #fff;
+    text-align: center;
+}
+
+h1,h2,h3{
+    font-weight: 400;
+}
+
+h2,h3,h4{
+    margin: 0;
 }
