@@ -1,6 +1,8 @@
 import React from 'react'
 import './App.css'
 
+import ParImpar from './components/condicional/ParImpar'
+import Produtos from './components/repeat/Produtos'
 import ListaAluno from './components/repeat/ListaAlunos'
 import FamiliaAdvanced from './components/basicos/FamiliaAdvanced'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
@@ -10,6 +12,7 @@ import ComParametro from './components/basicos/ComParametro'
 import Fragmento from './components/basicos/Fragmento'
 import Random from './components/basicos/Random'
 import Card from './components/layout/Card'
+import User from './components/condicional/User'
 
 
 //const el = document.getElementById('root')
@@ -40,6 +43,14 @@ export default _ =>
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+            <Card titulo="#08 - Renderização Condicional" color={getRandomColor()}>
+                <ParImpar numero = {19} ></ParImpar>
+                <User usuario={{ nome: "Gabriel" }}></User>
+                <User usuario={{ }}></User>
+            </Card>
+            <Card titulo="#07 - Tabela de Produtos" color={getRandomColor()}>
+                <Produtos></Produtos>
+            </Card>
             <Card titulo="#06 - Componentes com Filhos" color={getRandomColor()}>
                 <ListaAluno></ListaAluno>
             </Card>
