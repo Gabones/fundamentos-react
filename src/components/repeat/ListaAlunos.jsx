@@ -8,7 +8,7 @@ export default props => {
 
     return (
         <div>
-            <ul style={{ listStyle: 'none'}}>
+            <ul style={{ listStyle: 'none' }}>
                 {lis}
                 {li1}
                 <li>Ana - 9.7</li>

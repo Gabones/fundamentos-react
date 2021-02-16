@@ -1,6 +1,8 @@
 import React from 'react'
 import './App.css'
 
+import IndiretaPai from './components/comunicacao/IndiretaPai'
+import DiretaPai from './components/comunicacao/DiretaPai'
 import ListaAluno from './components/repeat/ListaAlunos'
 import FamiliaAdvanced from './components/basicos/FamiliaAdvanced'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
@@ -40,6 +42,12 @@ export default _ =>
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+            <Card titulo="#08 - Comunicação Indireta" color={getRandomColor()}>
+                <IndiretaPai></IndiretaPai>
+            </Card>
+            <Card titulo="#07 - Comunicação Direta" color={getRandomColor()}>
+                <DiretaPai></DiretaPai>
+            </Card>
             <Card titulo="#06 - Componentes com Filhos" color={getRandomColor()}>
                 <ListaAluno></ListaAluno>
             </Card>
