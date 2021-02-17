@@ -1,13 +1,10 @@
 import React from 'react'
 import './App.css'
 
-<<<<<<< HEAD
 import IndiretaPai from './components/comunicacao/IndiretaPai'
 import DiretaPai from './components/comunicacao/DiretaPai'
-=======
 import ParImpar from './components/condicional/ParImpar'
 import Produtos from './components/repeat/Produtos'
->>>>>>> 63f626d2dcb4c9a85097b0f38a4c24e0d73c149d
 import ListaAluno from './components/repeat/ListaAlunos'
 import FamiliaAdvanced from './components/basicos/FamiliaAdvanced'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
@@ -48,13 +45,12 @@ export default _ =>
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
-<<<<<<< HEAD
-            <Card titulo="#08 - Comunicação Indireta" color={getRandomColor()}>
+            <Card titulo="#10 - Comunicação Indireta" color={getRandomColor()}>
                 <IndiretaPai></IndiretaPai>
             </Card>
-            <Card titulo="#07 - Comunicação Direta" color={getRandomColor()}>
+            <Card titulo="#09 - Comunicação Direta" color={getRandomColor()}>
                 <DiretaPai></DiretaPai>
-=======
+            </Card>
             <Card titulo="#08 - Renderização Condicional" color={getRandomColor()}>
                 <ParImpar numero = {19} ></ParImpar>
                 <User usuario={{ nome: "Gabriel" }}></User>
@@ -62,7 +58,6 @@ export default _ =>
             </Card>
             <Card titulo="#07 - Tabela de Produtos" color={getRandomColor()}>
                 <Produtos></Produtos>
->>>>>>> 63f626d2dcb4c9a85097b0f38a4c24e0d73c149d
             </Card>
             <Card titulo="#06 - Componentes com Filhos" color={getRandomColor()}>
                 <ListaAluno></ListaAluno>
