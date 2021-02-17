@@ -1,8 +1,13 @@
 import React from 'react'
 import './App.css'
 
+<<<<<<< HEAD
 import IndiretaPai from './components/comunicacao/IndiretaPai'
 import DiretaPai from './components/comunicacao/DiretaPai'
+=======
+import ParImpar from './components/condicional/ParImpar'
+import Produtos from './components/repeat/Produtos'
+>>>>>>> 63f626d2dcb4c9a85097b0f38a4c24e0d73c149d
 import ListaAluno from './components/repeat/ListaAlunos'
 import FamiliaAdvanced from './components/basicos/FamiliaAdvanced'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
@@ -12,6 +17,7 @@ import ComParametro from './components/basicos/ComParametro'
 import Fragmento from './components/basicos/Fragmento'
 import Random from './components/basicos/Random'
 import Card from './components/layout/Card'
+import User from './components/condicional/User'
 
 
 //const el = document.getElementById('root')
@@ -42,11 +48,21 @@ export default _ =>
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+<<<<<<< HEAD
             <Card titulo="#08 - Comunicação Indireta" color={getRandomColor()}>
                 <IndiretaPai></IndiretaPai>
             </Card>
             <Card titulo="#07 - Comunicação Direta" color={getRandomColor()}>
                 <DiretaPai></DiretaPai>
+=======
+            <Card titulo="#08 - Renderização Condicional" color={getRandomColor()}>
+                <ParImpar numero = {19} ></ParImpar>
+                <User usuario={{ nome: "Gabriel" }}></User>
+                <User usuario={{ }}></User>
+            </Card>
+            <Card titulo="#07 - Tabela de Produtos" color={getRandomColor()}>
+                <Produtos></Produtos>
+>>>>>>> 63f626d2dcb4c9a85097b0f38a4c24e0d73c149d
             </Card>
             <Card titulo="#06 - Componentes com Filhos" color={getRandomColor()}>
                 <ListaAluno></ListaAluno>
