@@ -1,0 +1,1 @@
+export default props => <input id="passoInput" type="number" value={props.passo} onChange={props.setPasso}/>

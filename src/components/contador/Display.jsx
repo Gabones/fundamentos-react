@@ -1,0 +1,1 @@
+export default props => <h3>{props.numero}</h3>

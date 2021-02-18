@@ -1,5 +1,9 @@
 import React, {Component} from 'react'
 import './Contador.css'
+import PassoForm from './PassoForm'
+import Display from './Display'
+import Botoes from './Botoes'
+
 
 class Contador extends Component {
 
@@ -16,10 +20,10 @@ class Contador extends Component {
     render() {
         return <div className="Contador">
             <div>Contador</div>
-            <div>Valor Inicial: {this.state.numero}</div>
-            <input id="passoInput" type="number" value={this.state.passo} onChange={this.setPasso}/>
-            <button onClick={this.increment}>Incremento (+)</button>
-            <button onClick={this.decrement}>Decremento (-)</button>
+            {/* <div>Valor Inicial: {this.state.numero}</div> */}
+            <Display numero={this.state.numero}></Display>
+            <PassoForm passo={this.state.passo} setPasso={this.setPasso}></PassoForm>
+            <Botoes incrementar={this.increment} decrementar={this.decrement}></Botoes>
         </div>
     }
 }
