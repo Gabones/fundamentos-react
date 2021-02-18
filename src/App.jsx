@@ -11,8 +11,10 @@ import FamiliaMembro from './components/basicos/FamiliaMembro'
 import Familia from './components/basicos/Familia'
 import Primeiro from './components/basicos/Primeiro'
 import ComParametro from './components/basicos/ComParametro'
+import Contador from './components/contador/Contador'
 import Fragmento from './components/basicos/Fragmento'
 import Random from './components/basicos/Random'
+import Input from './components/forms/Input'
 import Card from './components/layout/Card'
 import User from './components/condicional/User'
 
@@ -45,6 +47,12 @@ export default _ =>
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+            <Card titulo="#12 - Contador" color={getRandomColor()}>
+                <Contador numeroInicial={20} passo={2}></Contador>
+            </Card>
+            <Card titulo="#11 - Componente Controlado" color={getRandomColor()}>
+                <Input></Input>
+            </Card>
             <Card titulo="#10 - Comunicação Indireta" color={getRandomColor()}>
                 <IndiretaPai></IndiretaPai>
             </Card>
