@@ -1,6 +1,7 @@
 import React from 'react'
 import './App.css'
 
+import Mega from './components/mega/Mega'
 import IndiretaPai from './components/comunicacao/IndiretaPai'
 import DiretaPai from './components/comunicacao/DiretaPai'
 import ParImpar from './components/condicional/ParImpar'
@@ -47,6 +48,9 @@ export default _ =>
     <div className="App">
         <h1>Fundamentos React</h1>
         <div className="Cards">
+            <Card titulo="#13 - Mega" color={getRandomColor()}>
+                <Mega></Mega>
+            </Card>
             <Card titulo="#12 - Contador" color={getRandomColor()}>
                 <Contador numeroInicial={20} passo={2}></Contador>
             </Card>
